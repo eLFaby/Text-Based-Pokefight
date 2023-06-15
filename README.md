@@ -1,6 +1,6 @@
 # ProjectC
 Design patterns: 
-- Model-View-Controller
+- Model-View-Controller: 
 pt a separa data(model), UI(view) si logica programului (controller)
 L-am folosit in clasele: Pokemon, GameView si GameController
 
@@ -9,9 +9,9 @@ Clasa GameMechanics
 
 Posibil sa fie si: 
 
-- Factory Method
+- Factory Method: 
 Obiectele sunt cei 2 pokemoni (Gengar si Raichu)
-- Strategy pattern
+- Strategy pattern:
 Pt implementarea diferitelor strategii de atac
 
 
