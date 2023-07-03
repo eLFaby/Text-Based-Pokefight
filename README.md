@@ -1,31 +1,22 @@
-# ProjectC
-Design patterns: 
-- Model-View-Controller: <br>
-pt a separa data(model), UI(view) si logica programului (controller) <br>
-L-am folosit in clasele: Pokemon, GameView si GameController
+<h2>Design patterns:</h2> <br>
+Strategy Pattern:<br>
+Attack.cs<br><br>
 
-- Singleton pattern: <br>
-Clasa GameMechanics
+Observer Pattern:<br>
+Pokemon.cs<br><br>
 
-- Factory Method: <br>
-Obiectele sunt cei 2 pokemoni (Gengar si Raichu)
-- Strategy pattern: <br> 
-Pt implementarea diferitelor strategii de atac
+Singleton Pattern:<br>
+GameController.cs<br><br>
 
 
-Unit tests:
-Se pot folosi teste pt. acuratete, calcularea daunelor, probabilitatea unui hit critical si selectia de atac.
+<h2>Unit tests:</h2>
+AttackTests.cs <br>
+Testeaza daca lovitura e valida si daca exista o lovitura critica sau nu <br><br>
+PokemonTests.cs <br>
+Se asigura ca in urma unui atac, hp-ul celui atacat a scazut. <br><br>
+GameControllerTests.cs<br>
+Testeaza conditiile de Game Over (Cand unul din pokemoni ajunge la 0 hp) <br><br>
 
-1. Model <br>
-	Clasele: Pokemon, Attacks si Game Mechanics <br>
-	Metode de procesare pt. 'damage', 'critical hits', 'random attack selection'
-
-2. View <br>
-	Interfata console-based
-
-3. Controller <br>
-	Game flow, turn-based actions, comunicarea dintre model si view <br>
-	Implementeaza logica meciului si determina un castigator	
 
 Jocul functioneaza asa:<br>
-Sunt 2 pokemoni, amandoi au 100 hp si 3 atacuri diferite, codul poate sa fie modificat in asa fel incat jocul sa se joace singur, userul sa aleaga un pokemon si sa il controleze...etc. 
+Sunt 2 pokemoni, amandoi au 100 hp si 3 atacuri diferite, fiecare pokemon ataca pe rand cu o abilitate aleasa random pana unul din ei ramane cu 0 hp. Exista mecanica de lovitura critica care dubleaza damage-ul.
