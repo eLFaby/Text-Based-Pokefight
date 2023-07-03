@@ -6,8 +6,11 @@ namespace Pokemon
     {
         static void Main(string[] args)
         {
-            GameController gameController = new GameController();
+            GameController gameController = GameController.Instance;
             gameController.StartGame();
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
     }
 }
